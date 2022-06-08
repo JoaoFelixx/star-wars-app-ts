@@ -1,25 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Routes from 'Router';
+import { GlobalStyle, themeSettings } from 'styles';
+import { ThemeProvider } from 'styled-components';
+import { IconContext } from 'react-icons';
+import { StarWarsProvider } from 'Context/StarWarsProvider';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={themeSettings}>
+      <IconContext.Provider value={{ size: '20px', color: '#ff0062', className: "global-class-name" }} >
+        <GlobalStyle />
+        <StarWarsProvider>
+          <Routes />
+        </StarWarsProvider>
+      </IconContext.Provider>
+    </ThemeProvider>
   );
 }
 
