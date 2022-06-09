@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="cardVehicle.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.40878906"
+     inkscape:cx="398.01016"
+     inkscape:cy="442.10769"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="740"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.69854808;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
+       id="rect10"
+       width="203.80901"
+       height="293.57706"
+       x="3.0954981"
+       y="0.82862175"
+       ry="0.070711501" />
+    <ellipse
+       style="opacity:1;fill:#4d4d4d;fill-opacity:1;stroke:#000000;stroke-width:1.07164788;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
+       id="path12"
+       cx="104.70115"
+       cy="70.887863"
+       rx="64.217354"
+       ry="60.333241" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1.33932078;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
+       id="path14"
+       sodipodi:sides="5"
+       sodipodi:cx="-199.34894"
+       sodipodi:cy="40.694218"
+       sodipodi:r1="57.268574"
+       sodipodi:r2="28.634289"
+       sodipodi:arg1="0.60054113"
+       sodipodi:arg2="1.2288597"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m -152.10065,73.056059 -37.64686,-5.385276 -25.77884,27.959586 -6.51182,-37.468434 -34.55725,-15.87715 33.62234,-17.77149 4.42129,-37.772204 27.29156,26.485049 37.28976,-7.467356 -16.75523,34.140151 z"
+       inkscape:transform-center-x="-0.21553486"
+       inkscape:transform-center-y="-4.1702326"
+       transform="matrix(0.74964921,0.27974026,-0.27974026,0.74964921,265.92651,96.025839)" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.50896454px;line-height:1.25;font-family:'Padauk Book';-inkscape-font-specification:'Padauk Book, Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.36763451"
+       x="21.550964"
+       y="153.47664"
+       id="text18"><tspan
+         sodipodi:role="line"
+         id="tspan16"
+         x="21.550964"
+         y="153.47664"
+         style="fill:#ffffff;stroke-width:0.36763451"> Nome do item</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.60329723px;line-height:1.25;font-family:'Padauk Book';-inkscape-font-specification:'Padauk Book, Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.21904947"
+       x="7.5375915"
+       y="180.72507"
+       id="text22"><tspan
+         sodipodi:role="line"
+         id="tspan20"
+         x="7.5375915"
+         y="180.72507"
+         style="fill:#ffffff;stroke-width:0.21904947">$ 1.200.00</tspan></text>
+    <text
+       id="text26"
+       y="212.4751"
+       x="7.5375915"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.60329723px;line-height:1.25;font-family:'Padauk Book';-inkscape-font-specification:'Padauk Book, Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.21904947"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.21904947"
+         y="212.4751"
+         x="7.5375915"
+         id="tspan24"
+         sodipodi:role="line">Velocidade</tspan></text>
+    <text
+       id="text38"
+       y="240.52086"
+       x="7.5375915"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.60329723px;line-height:1.25;font-family:'Padauk Book';-inkscape-font-specification:'Padauk Book, Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.21904947"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.21904947"
+         y="240.52086"
+         x="7.5375915"
+         id="tspan36"
+         sodipodi:role="line">Tamanho</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.60329723px;line-height:1.25;font-family:'Padauk Book';-inkscape-font-specification:'Padauk Book, Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.21904947"
+       x="7.5375915"
+       y="272.27084"
+       id="text42"><tspan
+         sodipodi:role="line"
+         id="tspan40"
+         x="7.5375915"
+         y="272.27084"
+         style="fill:#ffffff;stroke-width:0.21904947">passageiros</tspan></text>
+    <g
+       id="g51"
+       transform="matrix(1.2948707,0,0,0.98181279,306.20303,75.836767)">
+      <rect
+         ry="0.015255498"
+         y="145.90866"
+         x="-229.40698"
+         height="5.1009769"
+         width="145.55136"
+         id="rect44"
+         style="opacity:1;fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:0.76900047;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="rect46"
+         d="m -229.27981,145.74971 c -0.011,0 -0.0189,0.007 -0.0189,0.0155 v 5.22036 c 0,0.009 0.009,0.016 0.0189,0.016 H -117.917 c 0.011,0 0.0189,-0.007 0.0189,-0.016 v -5.22036 c 0,-0.009 -0.009,-0.0155 -0.0189,-0.0155 z"
+         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:0.68264276;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0" />
+    </g>
+    <g
+       transform="matrix(1.2823211,0,0,0.98253505,303.32204,137.11295)"
+       id="g57">
+      <rect
+         style="opacity:1;fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:0.76900047;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
+         id="rect53"
+         width="145.55136"
+         height="5.1009769"
+         x="-229.40698"
+         y="145.90866"
+         ry="0.015255498" />
+      <path
+         style="opacity:1;fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:0.68264276;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
+         d="m -229.27981,145.74971 c -0.011,0 -0.0189,0.007 -0.0189,0.0155 v 5.22036 c 0,0.009 0.009,0.016 0.0189,0.016 H -117.917 c 0.011,0 0.0189,-0.007 0.0189,-0.016 v -5.22036 c 0,-0.009 -0.009,-0.0155 -0.0189,-0.0155 z"
+         id="path55"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g63"
+       transform="matrix(1.2885959,0,0,0.98217341,304.76253,105.4166)">
+      <rect
+         ry="0.015255498"
+         y="145.90866"
+         x="-229.40698"
+         height="5.1009769"
+         width="145.55136"
+         id="rect59"
+         style="opacity:1;fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:0.76900047;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path61"
+         d="m -229.27981,145.74971 c -0.011,0 -0.0189,0.007 -0.0189,0.0155 v 5.22036 c 0,0.009 0.009,0.016 0.0189,0.016 H -117.917 c 0.011,0 0.0189,-0.007 0.0189,-0.016 v -5.22036 c 0,-0.009 -0.009,-0.0155 -0.0189,-0.0155 z"
+         style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:0.68264276;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0" />
+    </g>
+  </g>
+</svg>

@@ -7,7 +7,7 @@ import { StarWarsProvider } from 'Context/StarWarsProvider';
 function App() {
   return (
     <ThemeProvider theme={themeSettings}>
-      <IconContext.Provider value={{ size: '20px', color: '#ff0062', className: "global-class-name" }} >
+      <IconContext.Provider value={{ size: '20px', color: '#fff', className: "global-class-name" }} >
         <GlobalStyle />
         <StarWarsProvider>
           <Routes />

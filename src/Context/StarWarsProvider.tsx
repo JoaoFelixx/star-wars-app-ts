@@ -5,30 +5,30 @@ import {
   createContext,
 } from 'react';
 import {
+  Films,
+  Person,
+  Species,
+  Vehicle,
+  Planets,
   Provider,
+  Starship,
   FilmsRequest,
   PeopleRequest,
   PlanetsRequest,
   SpeciesRequest,
   StarshipRequest,
   VehiclesRequest,
-  Vehicle,
-  Species,
-  Films,
-  Starship,
-  Planets,
-  Person,
 } from 'interfaces';
 import { api } from 'services';
 
 interface StarWarsApiProvider {
-  isLoading: boolean;
-  vehicle?: Vehicle[];
-  species?: Species[];
   films?: Films[];
-  starship?: Starship[];
-  planets?: Planets[];
   people?: Person[];
+  species?: Species[];
+  planets?: Planets[];
+  vehicles?: Vehicle[];
+  starships?: Starship[];
+  isLoading: boolean;
 }
 
 const defaultValues: StarWarsApiProvider = {
@@ -55,7 +55,7 @@ function StarWarsProvider({ children }: Provider) {
           api.get<PlanetsRequest>('/planets')
         ])
 
-        const keys = ["species", "vehicles", "people", "starship", "films", "planets"];
+        const keys = ["species", "vehicles", "people", "starships", "films", "planets"];
 
         const starWarsData = requests.reduce((acc, current, index) => {
           const data = {
