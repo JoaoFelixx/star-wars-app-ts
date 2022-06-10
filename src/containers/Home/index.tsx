@@ -48,7 +48,7 @@ export function Home() {
 	        src="./img/planets/coruscant.jpg"
 	        alt="millennium falcon"
 	        link='/planets' />
-	    </Flex>
+	    </Flex><br/>
 	    <Footer />
     </React.Fragment>
 	)

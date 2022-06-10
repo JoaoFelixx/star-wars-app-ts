@@ -4,7 +4,7 @@ const Card = styled.div`
 	position: relative;
 	background-color: #1c1c1ccc;
 	color: #fff;
-	width: 32%;
+	width: 30%;
 	height: auto;
 	padding: 4px;
 	margin: 10px;
