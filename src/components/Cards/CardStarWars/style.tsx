@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Flex = styled.div`
   display: flex;
-  background-color: rgb(110, 111, 115, 0.7);
+  background-color: #1c1c1ccc;
   flex-flow: wrap column;
   margin-bottom: 2em;
   padding: 1em;

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Flex } from './style';
 import { localizedStrings } from 'constants/localizedStrings';
 import { useSelectorStarWars } from 'Context/StarWarsProvider';
 import {
@@ -9,6 +8,7 @@ import {
 	BackButton,
 	ProgressBar,
 	CardStarWars,
+	FlexContainer,
 } from 'components';
 
 interface VehiclesInfo {
@@ -25,7 +25,7 @@ export function Vehicle() {
 
 	const MemorizedCard = React.memo(() => {
 		return (
-			<Flex>
+			<FlexContainer>
 				{React.Children.toArray(
 					vehicles?.map((vehicle) => {
 						return (
@@ -58,7 +58,7 @@ export function Vehicle() {
 						)
 					})
 				)}
-			</Flex>
+			</FlexContainer>
 		)
 	})
 

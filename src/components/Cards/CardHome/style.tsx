@@ -29,26 +29,21 @@ const Title = styled.h2`
 `;
 
 const Button = styled.button`
-	 background: #E7C408;
-	 width: 100%;
-   border-radius: 20px;
-   color: #FFFFFF;
-   font-family: Brush Script MT;
-   font-size: 20px;
-   font-weight: 30px;
-   padding: 4px;
-   box-shadow: 1px 1px 20px 0 #000;
-   border: solid #337FED 1px;
-   text-decoration: none;
-   display: inline-block;
-   cursor: pointer;
-   text-align: center;
-   &:hover {
-	   	border: solid #337FED 1px;
-	   	background: #A69E08;
-	   	border-radius: 20px;
-	   	text-decoration: none;
-   }
+ 	background-color: #ffff00;
+  padding: 5px 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+	width: 100%;
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	&:hover {
+		transition: 1s;
+	 	background: #CFC100;
+	}
 `;
 
 export {

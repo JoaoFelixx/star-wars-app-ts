@@ -1,16 +1,17 @@
 import React from 'react';
 import { localizedStrings } from 'constants/localizedStrings';
 import { useSelectorStarWars } from 'Context/StarWarsProvider';
-import { Flex, CenterItems } from './style';
 import { FaEye } from 'react-icons/fa';
+import { CenterItems } from './style';
 import { GiBodyHeight } from 'react-icons/gi';
 import { BsGenderFemale, BsGenderMale } from 'react-icons/bs';
 import {
   Footer,
   Spinner,
   Jumbotron,
-  BackButton, 
-  CardStarWars, 
+  BackButton,
+  CardStarWars,
+  FlexContainer,
 } from 'components';
 
 export function People() {
@@ -18,7 +19,7 @@ export function People() {
 
   const MemorizedCard = React.memo(() => {
     return (
-      <Flex>
+      <FlexContainer>
         {React.Children.toArray(
           people?.map((person) => {
             return (
@@ -34,12 +35,12 @@ export function People() {
                   {person.height} cm
                 </CenterItems>
                 <p>Genêro: </p>
-                {person.gender === 'female' ? <BsGenderFemale /> : <BsGenderMale /> }
+                {person.gender === 'female' ? <BsGenderFemale /> : <BsGenderMale />}
               </CardStarWars>
             )
           })
         )}
-      </Flex>
+      </FlexContainer>
     )
   })
 

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Flex = styled.div`
+export const FlexContainer = styled.div`
 	display: flex;
 	flex-flow: wrap row;
 	justify-content: space-evenly;
@@ -18,5 +18,3 @@ const Flex = styled.div`
 		margin-bottom: 0.2em;
 	} 
 `;
-
-export { Flex, }
