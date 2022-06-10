@@ -4,7 +4,11 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import { HomePage, Vehicles } from 'pages';
+import {
+  HomePage,
+  Vehicles,
+  PeoplePage,
+} from 'pages';
 
 function Router() {
   return (
@@ -12,6 +16,7 @@ function Router() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/vehicles' element={<Vehicles />} />
+        <Route path="/people" element={<PeoplePage />} />
         <Route path='*' element={<Navigate to='/' />} />
       </Routes>
     </BrowserRouter>

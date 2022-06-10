@@ -7,6 +7,7 @@ const Jumbo = styled.header`
 `;
 
 const Title = styled.h1`
+	font-family: starWarsFont;
 	color: #fff;
 	text-align: center;
 `;

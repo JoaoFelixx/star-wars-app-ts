@@ -22,4 +22,8 @@ export const GlobalStyle = createGlobalStyle`
     background-size: cover;
     height: auto;
   }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;

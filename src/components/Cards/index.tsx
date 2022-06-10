@@ -1,3 +1,4 @@
+import { CardHome } from './CardHome';
 import { CardStarWars } from './CardStarWars';
 
-export { CardStarWars };
+export { CardHome, CardStarWars };

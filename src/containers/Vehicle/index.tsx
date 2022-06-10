@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Flex, ProgressBar } from './style';
+import { Flex } from './style';
 import { localizedStrings } from 'constants/localizedStrings';
 import { useSelectorStarWars } from 'Context/StarWarsProvider';
 import {
+	Footer,
 	Spinner,
 	Jumbotron,
 	BackButton,
+	ProgressBar,
 	CardStarWars,
 } from 'components';
 
@@ -85,8 +87,9 @@ export function Vehicle() {
 	return (
 		<React.Fragment>
 			<BackButton />
-			<Jumbotron title="Veículos" subTitle="Lista de veiculos Star Wars" />
+			<Jumbotron title="veículos" subTitle="Lista de veiculos Star Wars" />
 			{isLoading ? <Spinner /> : <MemorizedCard />}
+			<Footer />
 		</React.Fragment>
 	)
 }
