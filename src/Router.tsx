@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import {
   Films,
+  Species,
   HomePage,
   Vehicles,
   PeoplePage,
@@ -16,9 +17,10 @@ function Router() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/vehicles' element={<Vehicles />} />
-        <Route path="/people" element={<PeoplePage />} />
         <Route path="/films" element={<Films />} />
+        <Route path="/people" element={<PeoplePage />} />
+        <Route path='/species' element={<Species />} />
+        <Route path='/vehicles' element={<Vehicles />} />
         <Route path='*' element={<Navigate to='/' />} />
       </Routes>
     </BrowserRouter>
