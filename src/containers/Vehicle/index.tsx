@@ -23,7 +23,7 @@ export function Vehicle() {
 	const [maxLength, setMaxLength] = useState<number>(0);
 	const [maxPassengers, setMaxPassengers] = useState<number>(0);
 
-	const MemorizedCard = React.memo(() => {
+	const MemorizedVehicles = React.memo(() => {
 		return (
 			<FlexContainer>
 				{React.Children.toArray(
@@ -88,7 +88,7 @@ export function Vehicle() {
 		<React.Fragment>
 			<BackButton />
 			<Jumbotron title="veículos" subTitle="Lista de veiculos Star Wars" />
-			{isLoading ? <Spinner /> : <MemorizedCard />}
+			{isLoading ? <Spinner /> : <MemorizedVehicles />}
 			<Footer />
 		</React.Fragment>
 	)

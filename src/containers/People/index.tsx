@@ -17,7 +17,7 @@ import {
 export function People() {
   const { isLoading, people } = useSelectorStarWars();
 
-  const MemorizedCard = React.memo(() => {
+  const MemorizedPeople = React.memo(() => {
     return (
       <FlexContainer>
         {React.Children.toArray(
@@ -48,7 +48,7 @@ export function People() {
     <React.Fragment>
       <BackButton />
       <Jumbotron title="Pessoas" subTitle="Lista de pessoas Star Wars" />
-      {isLoading ? <Spinner /> : <MemorizedCard />}
+      {isLoading ? <Spinner /> : <MemorizedPeople />}
       <Footer />
     </React.Fragment>
   )
