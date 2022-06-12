@@ -10,6 +10,7 @@ import {
   HomePage,
   Vehicles,
   PeoplePage,
+  Planets,
 } from 'pages';
 
 function Router() {
@@ -20,6 +21,7 @@ function Router() {
         <Route path="/films" element={<Films />} />
         <Route path="/people" element={<PeoplePage />} />
         <Route path='/species' element={<Species />} />
+        <Route path="/planets" element={<Planets />} />
         <Route path='/vehicles' element={<Vehicles />} />
         <Route path='*' element={<Navigate to='/' />} />
       </Routes>
