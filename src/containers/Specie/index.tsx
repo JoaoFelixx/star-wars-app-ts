@@ -17,12 +17,22 @@ interface LifeAndHeightFromSpecies {
   heights: number[];
 }
 
+interface ColorEyes {
+  [index: string]: string;
+}
+
 export function Specie() {
   const { isLoading, species } = useSelectorStarWars();
   const [maxAge, setMaxAge] = useState<number>(0);
   const [maxHeight, setMaxHeight] = useState<number>(0);
 
   const MemorizedSpecies = React.memo(() => {
+    const colorEyeNotRegistered: ColorEyes = {
+      "hazel": "#ad8e00",
+      "amber": "#ff9100",
+      "golden": "#ffd900"
+    };
+
     return (
       <FlexContainer>
         {React.Children.toArray(
@@ -36,7 +46,7 @@ export function Specie() {
                   {React.Children.toArray(
                     specie.eye_colors.split(',').map((color) => {
                       return (
-                        <FaEye color={color} />
+                        <FaEye color={colorEyeNotRegistered[color.trim()] || color} />
                       )
                     })
                   )}
