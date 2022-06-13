@@ -41,9 +41,9 @@ export function Specie() {
                     })
                   )}
                 </div>
-                <p>Tempo de vida: {specie.average_lifespan}</p>
+                <p>{localizedStrings.averageLifeSpan} {specie.average_lifespan}</p>
                 <ProgressBar value={specie.average_lifespan} max={maxAge} color="#00ff00"></ProgressBar>
-                <p>Altura: <GiBodyHeight /> {specie.average_height} cm </p>
+                <p>{localizedStrings.height} <GiBodyHeight /> {specie.average_height} {localizedStrings.cm} </p>
                 <ProgressBar value={specie.average_height} max={maxHeight} color="#ffff00"></ProgressBar>
               </CardStarWars>
             )
@@ -78,7 +78,7 @@ export function Specie() {
   return (
     <React.Fragment>
       <BackButton />
-      <Jumbotron title="espécies" subTitle="Lista de espécies Star Wars" />
+      <Jumbotron title={localizedStrings.species} subTitle={localizedStrings.listSpeciesStarWars} />
       {isLoading ? <Spinner /> : <MemorizedSpecies />}
     </React.Fragment>
   )

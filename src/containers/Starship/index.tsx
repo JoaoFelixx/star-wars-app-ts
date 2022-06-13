@@ -24,6 +24,8 @@ export function StarShip() {
   const [maxShipLength, setMaxShipLength] = useState<number>(0);
   const [maxPassengers, setMaxPassengers] = useState<number>(0);
 
+  const returnValueOrZero = (number: number) => isNaN(Number(number)) ? 0 : number;
+
   const MemorizedStarShips = React.memo(() => {
     return (
       <FlexContainer>
@@ -32,14 +34,14 @@ export function StarShip() {
             return (
               <CardStarWars src={localizedStrings.images[ship.name]} alt={ship.name}>
                 <h2>{ship.name}</h2>
-                <p>Custo em créditos: {ship.cost_in_credits} </p>
-                <ProgressBar color="#ffc400" max={maxCreditCost} value={ship.cost_in_credits}></ProgressBar>
-                <p>Velocidade máxima atmosférica: {ship.max_atmosphering_speed} </p>
-                <ProgressBar color="#ff0000" max={maxSpeed} value={ship.max_atmosphering_speed}></ProgressBar>
-                <p>Passageiros: {ship.passengers} </p>
-                <ProgressBar color="#0051ff" max={maxPassengers} value={Math.round(Number(ship.passengers))}></ProgressBar>
-                <p>Tamanho da nave: {ship.length} </p>
-                <ProgressBar color="#15ff00" max={maxShipLength} value={Math.round(Number(ship.length))}></ProgressBar>
+                <p>{localizedStrings.costInCredits} {ship.cost_in_credits} </p>
+                <ProgressBar color="#ffc400" max={maxCreditCost} value={returnValueOrZero(parseInt(ship.cost_in_credits))}></ProgressBar>
+                <p>{localizedStrings.maxAtmosphericSpeed} {ship.max_atmosphering_speed} </p>
+                <ProgressBar color="#ff0000" max={maxSpeed} value={returnValueOrZero(parseInt(ship.max_atmosphering_speed))}></ProgressBar>
+                <p>{localizedStrings.passengers} {ship.passengers} </p>
+                <ProgressBar color="#0051ff" max={maxPassengers} value={Math.round(returnValueOrZero(Number(ship.passengers)))}></ProgressBar>
+                <p>{localizedStrings.shipLength} {ship.length} </p>
+                <ProgressBar color="#15ff00" max={maxShipLength} value={Math.round(returnValueOrZero(Number(ship.length)))}></ProgressBar>
               </CardStarWars>
             )
           })
@@ -65,10 +67,6 @@ export function StarShip() {
       const {
         creditsCost, passengers, shipsLength, speeds
       } = starships
-        .filter((ship) =>
-          !isNaN(Number(ship.cost_in_credits)) &&
-          !isNaN(Number(ship.length)) &&
-          !isNaN(Number(ship.max_atmosphering_speed)))
         .reduce<ShipInfo>((acc, current) => {
           return {
             creditsCost: [...acc.creditsCost, Number(current.cost_in_credits)],
@@ -91,7 +89,7 @@ export function StarShip() {
   return (
     <React.Fragment>
       <BackButton />
-      <Jumbotron title="naves espaciais" subTitle="Lista de naves espaciais Star Wars" />
+      <Jumbotron title={localizedStrings.starShips} subTitle={localizedStrings.listShipsStarWars} />
       {isLoading ? <Spinner /> : <MemorizedStarShips />}
     </React.Fragment>
   )

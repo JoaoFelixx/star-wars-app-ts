@@ -34,15 +34,15 @@ export function Planet() {
             return (
               <CardStarWars src={localizedStrings.images[planet.name]} alt={planet.name}>
                 <h2>{planet.name}</h2>
-                <p>Diamêtro: {planet.diameter} </p>
+                <p>{localizedStrings.diameter} {planet.diameter} </p>
                 <ProgressBar value={planet.diameter} max={maxDiameter} color='#0084ff'></ProgressBar>
-                <p>População: {planet.population}</p>
+                <p>{localizedStrings.population} {planet.population}</p>
                 <ProgressBar value={planet.population} max={maxPopulation} color='#ff00d4'></ProgressBar>
-                <p>Periodo de órbita: {planet.orbital_period} </p>
+                <p>{localizedStrings.orbitalPeriod} {planet.orbital_period} </p>
                 <ProgressBar value={planet.orbital_period} max={maxOrbitPeriod} color='#ff7300'></ProgressBar>
-                <p>Água na superficie: {planet.surface_water} </p>
+                <p>{localizedStrings.surfaceWater} {planet.surface_water} </p>
                 <ProgressBar value={planet.surface_water} max={maxSurfaceWater} color='#0004ff'></ProgressBar>
-                <p>Tempo de rotação: {planet.rotation_period}</p>
+                <p>{localizedStrings.rotationPeriod} {planet.rotation_period}</p>
                 <ProgressBar value={planet.rotation_period} max={maxRotationTime} color='#00ff00'></ProgressBar>
               </CardStarWars>
             )
@@ -93,7 +93,7 @@ export function Planet() {
   return (
     <React.Fragment>
       <BackButton />
-      <Jumbotron title='planetas' subTitle='Lista de planetas Star Wars' />
+      <Jumbotron title={localizedStrings.planets} subTitle={localizedStrings.listPlanetsStarWars} />
       {isLoading ? <Spinner /> : <MemorizedPlanets />}
     </React.Fragment>
   )

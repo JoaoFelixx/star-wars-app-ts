@@ -1,55 +1,50 @@
 import React from 'react';
 import { Flex } from './style';
 import { Footer, CardHome, Jumbotron } from 'components';
+import { localizedStrings } from 'constants/localizedStrings';
 
 export function Home() {
 	return (
 		<React.Fragment>
-			<Jumbotron title="Star Wars" subTitle="Site de informações Star Wars" />
+			<Jumbotron title={localizedStrings.starWars} subTitle={localizedStrings.starWarsInfoSite} />
 			<Flex>
-	      <CardHome
-	        title='Naves Estelares'
-	        description='Veja as naves mais famosas da saga'
-	        src="./img/ships/millennium-falcon.jpg"
-	        alt="millennium falcon"
-	        link='/starships' />
+				<CardHome
+					title={localizedStrings.starShips}
+					src="./img/ships/millennium-falcon.jpg"
+					alt={localizedStrings.millenniumFalcon}
+					link='/starships' />
 
-	      <CardHome
-	        title='Personagens'
-	        description='Veja os personagens mais icônicos de Star Wars'
-	        src="./img/persons/darth-vader.jpg"
-	        alt="a"
-	        link='/people' />
+				<CardHome
+					title={localizedStrings.characters}
+					src="./img/persons/darth-vader.jpg"
+					alt={localizedStrings.darthVader}
+					link='/people' />
 
-	      <CardHome
-	        title='Filmes'
-	        description='Conheça alguns filmes da franquia'
-	        src="./img/persons/darth-vader-lego.jpg"
-	        alt="a"
-	        link='/films' />
-					
-	      <CardHome
-	        title='Veículos'
-	        description='Veja alguns dos veiculos mais famosos do cinema'
-	        src="./img/vehicles/at-st.jpg"
-	        alt="millennium falcon"
-	        link='/vehicles' />
+				<CardHome
+					title={localizedStrings.Movies}
+					src="./img/persons/darth-vader-lego.jpg"
+					alt={localizedStrings.darthVader}
+					link='/films' />
 
-	      <CardHome
-	        title='Espécies'
-	        description='Veja algumas das espécies mais peculiares'
-	        src="./img/persons/yoda.jpg"
-	        alt="millennium falcon"
-	        link='/species' />
+				<CardHome
+					title={localizedStrings.Vehicles}
+					src="./img/vehicles/at-st.jpg"
+					alt={localizedStrings.atSt}
+					link='/vehicles' />
 
-	      <CardHome
-	        title='Planetas'
-	        description='Conheça alguns dos planetas (fictícios) mais famosos já vistos'
-	        src="./img/planets/coruscant.jpg"
-	        alt="millennium falcon"
-	        link='/planets' />
-	    </Flex><br/>
-	    <Footer />
-    </React.Fragment>
+				<CardHome
+					title={localizedStrings.Species}
+					src="./img/persons/yoda.jpg"
+					alt={localizedStrings.yoda}
+					link='/species' />
+
+				<CardHome
+					title={localizedStrings.Planets}
+					src="./img/planets/coruscant.jpg"
+					alt={localizedStrings.coruscant}
+					link='/planets' />
+			</Flex><br />
+			<Footer />
+		</React.Fragment>
 	)
 }

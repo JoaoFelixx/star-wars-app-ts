@@ -1,9 +1,10 @@
 import { Foot, Text } from './style';
+import { localizedStrings } from 'constants/localizedStrings';
 
 export function Footer() {
 	return (
 		<Foot>
-			<Text>Star Wars Info By Felix Developer</Text>
+			<Text>{localizedStrings.starWarsByFelixDeveloper}</Text>
 		</Foot>
 	)
 }

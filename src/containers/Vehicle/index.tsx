@@ -30,7 +30,7 @@ export function Vehicle() {
 						return (
 							<CardStarWars src={localizedStrings.images[vehicle.name]} alt={vehicle.name}>
 								<h2>{vehicle.name}</h2><br />
-								<p>Velocidade: {vehicle.max_atmosphering_speed} KPH</p>
+								<p>{localizedStrings.speed} {vehicle.max_atmosphering_speed} KPH</p>
 								<ProgressBar
 									color="#ff0000"
 									value={vehicle.max_atmosphering_speed}
@@ -38,7 +38,7 @@ export function Vehicle() {
 									{vehicle.max_atmosphering_speed}
 								</ProgressBar>
 
-								<p>Tamanho: {vehicle.length} metros</p>
+								<p>{localizedStrings.length} {vehicle.length} metros</p>
 								<ProgressBar
 									color="#0000ff"
 									value={Math.round(Number(vehicle.length))}
@@ -46,7 +46,7 @@ export function Vehicle() {
 									{vehicle.length}
 								</ProgressBar>
 
-								<p>Passageiros: {vehicle.passengers} Passageiro(s)</p>
+								<p>{localizedStrings.passengers} {vehicle.passengers} Passageiro(s)</p>
 								<ProgressBar
 									color="#00ff00"
 									value={vehicle.passengers}
@@ -86,7 +86,7 @@ export function Vehicle() {
 	return (
 		<React.Fragment>
 			<BackButton />
-			<Jumbotron title="veículos" subTitle="Lista de veiculos Star Wars" />
+			<Jumbotron title={localizedStrings.vehicles} subTitle={localizedStrings.listVehiclesStarWars} />
 			{isLoading ? <Spinner /> : <MemorizedVehicles />}
 		</React.Fragment>
 	)

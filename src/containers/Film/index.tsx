@@ -20,9 +20,9 @@ export function Film() {
             return (
               <CardStarWars src={localizedStrings.images[title]} alt={title}>
                 <h2>{title}</h2><br />
-                <p>Produção: {producer}</p>
-                <p>Diretor: {director}</p>
-                <p>Data de lançamento: {release_date}</p>
+                <p>{localizedStrings.producer} {producer}</p>
+                <p>{localizedStrings.director} {director}</p>
+                <p>{localizedStrings.releaseDate} {release_date}</p>
               </CardStarWars>
             )
           })
@@ -34,7 +34,7 @@ export function Film() {
   return (
     <React.Fragment>
       <BackButton />
-      <Jumbotron title='filmes' subTitle='Lista de Filmes Star Wars' />
+      <Jumbotron title={localizedStrings.movies} subTitle={localizedStrings.listMoviesStarWars} />
       {isLoading ? <Spinner /> : <MemorizedFilms />}
     </React.Fragment>
   )

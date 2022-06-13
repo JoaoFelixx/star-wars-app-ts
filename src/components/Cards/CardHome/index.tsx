@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import { Card, Title, Image, Button } from './style';
+import { localizedStrings } from 'constants/localizedStrings';
 
 interface InfoLinks {
 	src: string;
 	alt: string;
 	link: string;
 	title: string;
-	description: string;
 }
 
 export function CardHome({
@@ -21,7 +21,7 @@ export function CardHome({
 			<Title> {title} </Title>
 			<br />
 			<Link to={link}>
-				<Button> Clique Aqui </Button>
+				<Button> {localizedStrings.clickHere} </Button>
 			</Link>
 		</Card>
 	)

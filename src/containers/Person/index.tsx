@@ -23,17 +23,17 @@ export function Person() {
           people?.map((person) => {
             return (
               <CardStarWars src={localizedStrings.images[person.name]} alt={person.name}>
-                <h2>Nome: {person.name}</h2>
-                <p>Olhos: {person.eye_color}</p>
+                <h2>{localizedStrings.name} {person.name}</h2>
+                <p>{localizedStrings.eyes} {person.eye_color}</p>
                 <CenterItems>
                   <FaEye color={person.eye_color === 'blue-gray' ? '#6FDCF6' : person.eye_color} />
                 </CenterItems>
-                <p>Altura: {person.height}</p>
+                <p>{localizedStrings.height} {person.height}</p>
                 <CenterItems>
                   <GiBodyHeight />
                   {person.height} cm
                 </CenterItems>
-                <p>Genêro: </p>
+                <p>{localizedStrings.gender} </p>
                 {person.gender === 'female' ? <BsGenderFemale /> : <BsGenderMale />}
               </CardStarWars>
             )
@@ -46,7 +46,7 @@ export function Person() {
   return (
     <React.Fragment>
       <BackButton />
-      <Jumbotron title="Pessoas" subTitle="Lista de pessoas Star Wars" />
+      <Jumbotron title={localizedStrings.People} subTitle={localizedStrings.listCharactersStarWars} />
       {isLoading ? <Spinner /> : <MemorizedPeople />}
     </React.Fragment>
   )
