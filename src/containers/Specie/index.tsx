@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { localizedStrings } from "constants/localizedStrings";
-import { useSelectorStarWars } from "Context/StarWarsProvider";
 import {
   Spinner,
   Jumbotron,
   BackButton,
+  ProgressBar,
   CardStarWars,
   FlexContainer,
-  ProgressBar,
 } from "components";
 import { FaEye } from 'react-icons/fa';
 import { GiBodyHeight } from 'react-icons/gi';
+import { localizedStrings } from "constants/localizedStrings";
+import { useSelectorStarWars } from "Context/StarWarsProvider";
 
 interface LifeAndHeightFromSpecies {
   ages: number[];
@@ -20,14 +20,14 @@ interface LifeAndHeightFromSpecies {
 export function Specie() {
   const { isLoading, species } = useSelectorStarWars();
   const [maxAge, setMaxAge] = useState<number>(0);
-  const [maxHeight, setMaxHeight] = useState<number>(0); 
+  const [maxHeight, setMaxHeight] = useState<number>(0);
 
   const MemorizedSpecies = React.memo(() => {
     return (
       <FlexContainer>
         {React.Children.toArray(
-          species?.map(specie => {            
-            if (specie.average_lifespan === 'unknown' || specie.average_lifespan === 'indefinite')       
+          species?.map(specie => {
+            if (specie.average_lifespan === 'unknown' || specie.average_lifespan === 'indefinite')
               specie.average_lifespan = 'Desconhecido';
             return (
               <CardStarWars src={localizedStrings.images[specie.name]} alt={specie.name}>

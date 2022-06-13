@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { localizedStrings } from 'constants/localizedStrings';
-import { useSelectorStarWars } from 'Context/StarWarsProvider';
 import {
-	Footer,
 	Spinner,
 	Jumbotron,
 	BackButton,
@@ -10,6 +7,8 @@ import {
 	CardStarWars,
 	FlexContainer,
 } from 'components';
+import { localizedStrings } from 'constants/localizedStrings';
+import { useSelectorStarWars } from 'Context/StarWarsProvider';
 
 interface VehiclesInfo {
 	speeds: Array<number>;
@@ -89,7 +88,6 @@ export function Vehicle() {
 			<BackButton />
 			<Jumbotron title="veículos" subTitle="Lista de veiculos Star Wars" />
 			{isLoading ? <Spinner /> : <MemorizedVehicles />}
-			<Footer />
 		</React.Fragment>
 	)
 }

@@ -1,20 +1,19 @@
 import React from 'react';
-import { localizedStrings } from 'constants/localizedStrings';
-import { useSelectorStarWars } from 'Context/StarWarsProvider';
 import { FaEye } from 'react-icons/fa';
 import { CenterItems } from './style';
 import { GiBodyHeight } from 'react-icons/gi';
 import { BsGenderFemale, BsGenderMale } from 'react-icons/bs';
 import {
-  Footer,
   Spinner,
   Jumbotron,
   BackButton,
   CardStarWars,
   FlexContainer,
 } from 'components';
+import { localizedStrings } from 'constants/localizedStrings';
+import { useSelectorStarWars } from 'Context/StarWarsProvider';
 
-export function People() {
+export function Person() {
   const { isLoading, people } = useSelectorStarWars();
 
   const MemorizedPeople = React.memo(() => {
@@ -49,7 +48,6 @@ export function People() {
       <BackButton />
       <Jumbotron title="Pessoas" subTitle="Lista de pessoas Star Wars" />
       {isLoading ? <Spinner /> : <MemorizedPeople />}
-      <Footer />
     </React.Fragment>
   )
 }

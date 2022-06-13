@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import {
-  Footer,
   Spinner,
   Jumbotron,
   BackButton,
+  ProgressBar,
   CardStarWars,
   FlexContainer,
-  ProgressBar,
 } from 'components';
 import { localizedStrings } from 'constants/localizedStrings';
 import { useSelectorStarWars } from 'Context/StarWarsProvider';
@@ -36,15 +35,15 @@ export function Planet() {
               <CardStarWars src={localizedStrings.images[planet.name]} alt={planet.name}>
                 <h2>{planet.name}</h2>
                 <p>Diamêtro: {planet.diameter} </p>
-                <ProgressBar value={planet.diameter} max={maxDiameter} color='#ff0000'></ProgressBar>
+                <ProgressBar value={planet.diameter} max={maxDiameter} color='#0084ff'></ProgressBar>
                 <p>População: {planet.population}</p>
-                <ProgressBar value={planet.population} max={maxPopulation} color='#ff0000'></ProgressBar>
+                <ProgressBar value={planet.population} max={maxPopulation} color='#ff00d4'></ProgressBar>
                 <p>Periodo de órbita: {planet.orbital_period} </p>
-                <ProgressBar value={planet.orbital_period} max={maxOrbitPeriod} color='#ff0000'></ProgressBar>
+                <ProgressBar value={planet.orbital_period} max={maxOrbitPeriod} color='#ff7300'></ProgressBar>
                 <p>Água na superficie: {planet.surface_water} </p>
-                <ProgressBar value={planet.surface_water} max={maxSurfaceWater} color='#ff0000'></ProgressBar>
+                <ProgressBar value={planet.surface_water} max={maxSurfaceWater} color='#0004ff'></ProgressBar>
                 <p>Tempo de rotação: {planet.rotation_period}</p>
-                <ProgressBar value={planet.rotation_period} max={maxRotationTime} color='#ff0000'></ProgressBar>
+                <ProgressBar value={planet.rotation_period} max={maxRotationTime} color='#00ff00'></ProgressBar>
               </CardStarWars>
             )
           })
@@ -96,7 +95,6 @@ export function Planet() {
       <BackButton />
       <Jumbotron title='planetas' subTitle='Lista de planetas Star Wars' />
       {isLoading ? <Spinner /> : <MemorizedPlanets />}
-      <Footer />
     </React.Fragment>
   )
 }

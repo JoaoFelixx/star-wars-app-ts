@@ -1,8 +1,9 @@
 import { Home } from './Home';
 import { Film } from './Film';
 import { Specie } from './Specie';
-import { People } from './People'
+import { Person } from './Person'
 import { Planet } from './Planet';
 import { Vehicle } from './Vehicle';
+import { StarShip } from './Starship';
 
-export { Home, Film, Specie, People, Planet, Vehicle };
+export { Home, Film, Specie, Person, Planet, Vehicle, StarShip };

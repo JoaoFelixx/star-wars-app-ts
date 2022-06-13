@@ -6,11 +6,12 @@ import {
 } from 'react-router-dom';
 import {
   Films,
+  People,
+  Planets,
   Species,
   HomePage,
   Vehicles,
-  PeoplePage,
-  Planets,
+  StarShips,
 } from 'pages';
 
 function Router() {
@@ -19,10 +20,11 @@ function Router() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path="/films" element={<Films />} />
-        <Route path="/people" element={<PeoplePage />} />
+        <Route path="/people" element={<People />} />
         <Route path='/species' element={<Species />} />
         <Route path="/planets" element={<Planets />} />
         <Route path='/vehicles' element={<Vehicles />} />
+        <Route path="/starships" element={<StarShips />} />
         <Route path='*' element={<Navigate to='/' />} />
       </Routes>
     </BrowserRouter>

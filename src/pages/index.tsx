@@ -1,8 +1,9 @@
 import { Films } from './Films';
+import { People } from './People';
 import { Species } from './Species';
 import { Planets } from './Planets';
 import { HomePage } from './HomePage';
 import { Vehicles } from './Vehicles';
-import { PeoplePage } from './PeoplePage';
+import { StarShips } from './StarShips';
 
-export { Films, Planets, Species, HomePage, Vehicles, PeoplePage };
+export { Films, People, Planets, Species, HomePage, Vehicles, StarShips };
